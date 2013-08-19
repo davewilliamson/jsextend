@@ -9,20 +9,24 @@ Array.prototype.unique = function() {
     return r;
 };
 
+Array.prototype.contains = function(obj) {
+    var i = this.length;
+    while (i--) {
+        if (this[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+};
+
+String.prototype.contains = function(str) {
+    return this.indexOf(str);
+};
+
 String.prototype.endsWith = function(suffix) {
     return this.indexOf(suffix, this.length - suffix.length) !== -1;
 };
 
-String.prototype.startsWith = function(suffix) {
-    return this.indexOf(suffix, 0) !== -1;
-};
-
-Object.prototype.length = function(){
-	var count = 0;
-	for(var key in this) {
-		if(this.hasOwnProperty(key)) {
-			count++;
-		}
-	}
-	return count;
+String.prototype.startsWith = function(prefix) {
+    return this.indexOf(prefix, 0) !== -1;
 };
