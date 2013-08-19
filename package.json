@@ -1,0 +1,25 @@
+{
+  "name": "jsextend",
+  "description": "Extentions to the Javascript language",
+  "version": "0.0.1",
+  "author": "davewilliamson",
+  "homepage": "https://github.com/davewilliamson/jsextent",
+  "keywords": [
+    "javascript",
+    "extentions",
+    "prototype"
+  ],
+  "bugs": "https://github.com/davewilliamson/jsextend/issues",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/davewilliamson/jsextend.git"
+  },
+  "engine": {
+    "node": ">=0.0.0"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "dependencies": {}
+}
